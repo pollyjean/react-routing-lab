@@ -2,6 +2,10 @@ export const convertToLink = (item) => {
   return item.replaceAll(" ", "_");
 }
 
+export const convertToName = (item) => {
+  return item.replaceAll("_", " ");
+}
+
 export const authorData = [
   {
     "author": "J.R.R Tolkien",
