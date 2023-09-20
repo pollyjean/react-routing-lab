@@ -12,12 +12,32 @@ export const authorData = [
     "book": [
       {
         "name": "The Load of the Ring",
-        "chapters": ["The Fellowship of the Ring", "The Two Towers", "The Return of the King"],
+        "chapters": ["Chapter 1", "Chapter 2", "Chapter 3"],
+        "characters": [
+          "ring guy",
+          "ring guy friend",
+          "eye",
+        ]
+      },
+      {
+        "name": "The Load of the Ring II",
+        "chapters": ["Chapter 1", "Chapter 2", "Chapter 3"],
         "characters": [
           "ring guy",
           "ring guy friend",
           "eye",
           "eye friend"
+        ]
+      },
+      {
+        "name": "The Load of the Ring III",
+        "chapters": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
+        "characters": [
+          "ring guy",
+          "ring guy friend",
+          "eye",
+          "eye friend",
+          "thief"
         ]
       }
     ]
@@ -27,18 +47,29 @@ export const authorData = [
     "book": [
       {
         "name": "Earthsea",
-        "chapters": [
-          "A Wizard of Earthsea",
-          "The Tombs of Atuan",
-          "The Farthest Shore",
-          "Tehanu",
-          "Tales from Earthsea",
-          "The Other Wind"
-        ],
+        "chapters": ["Chapter 1", "Chapter 2", "Chapter 3"],
         "characters": [
           "wizard",
           "nomad",
           "left hand"
+        ]
+      },
+      {
+        "name": "Earthsea II",
+        "chapters": ["Chapter 1", "Chapter 2", "Chapter 3"],
+        "characters": [
+          "wizard",
+          "nomad",
+          "right hand"
+        ]
+      },
+      {
+        "name": "Earthsea III",
+        "chapters": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
+        "characters": [
+          "wizard",
+          "nomad",
+          "no hand"
         ]
       }
     ]
