@@ -1,15 +1,20 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { authorData, convertToLink } from "../../authorData";
 
 const Book = () => {
-  const { book, name } = useParams();
-  const [linkedItem] = authorData.filter((item) => name === convertToLink(item.author));
-  console.log(linkedItem);
-
+  const { state } = useLocation();
+  const authorIndex = state.authorIndex;
+  const bookIndex = state.index;
+  const bookItem = authorData[authorIndex].book[bookIndex];
   return (
     <div>
-      <h1>Book</h1>
+      <h1>{bookItem.name}</h1>
+      <div>
+        <Link to={"chapters"}>Chapters</Link>
+        <br />
+        <Link to={"characters"}>Characters</Link>
+      </div>
     </div>
   );
 };

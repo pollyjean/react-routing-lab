@@ -5,6 +5,8 @@ import Main from "./router/screens/Main";
 import NotFound from "./router/screens/NotFound";
 import Authors from "./router/screens/Authors";
 import Book from "./router/screens/Book";
+import Chapters from "./router/screens/Chapters";
+import Characters from "./router/screens/Characters";
 
 const router = createBrowserRouter([
   {
@@ -26,14 +28,18 @@ const router = createBrowserRouter([
         children: [
           {
             path: ":book",
-            element: <Book />
+            element: <Book />,
+            children: [
+              {
+                path: "chapters",
+                element: <Chapters />
+              },
+              {
+                path: "characters",
+                element: <Characters />
+              }
+            ]
           },
-          {
-            path: ":book/chapters",
-          },
-          {
-            path: ":book/characters",
-          }
         ]
       },
 

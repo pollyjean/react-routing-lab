@@ -9,7 +9,7 @@ const Main = () => {
       <ul>
         {authorData.map((item, index) => (
           <li key={convertToLink(item.author)}>
-            <Link to={`author/${convertToLink(item.author)}`} state={{ authorData, index }}>
+            <Link to={`author/${convertToLink(item.author)}`} state={{ index }}>
               {item.author}
             </Link>
           </li>
